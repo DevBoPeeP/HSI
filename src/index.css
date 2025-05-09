@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xxs: 20rem;
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+.overlay {
+  border-image: fill 1
+    linear-gradient(hsl(12, 57%, 47%, 0.62), hsl(344, 63%, 72%, 0.76));
+}
+
+.slide-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/student3.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: change 10s infinite ease-in-out;
+}
+
+.slide-1 h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 16px;
+  margin-top: 20%;
+  padding-bottom: 10px;
+}
+
+.slide-1 p {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+@keyframes change {
+  0% {
+    background-image: url("/student3.avif");
+  }
+  50% {
+    background-image: url("/facilities3.avif");
+  }
+  100% {
+    background-image: url("/administration 1.jpg");
+  }
+}
